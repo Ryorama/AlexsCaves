@@ -70,8 +70,7 @@ dependencies {
     compileOnly "mezz.jei:jei-${minecraft_version}-common-api:${jei_version}"
     compileOnly "mezz.jei:jei-${minecraft_version}-neoforge-api:${jei_version}"
     runtimeOnly "mezz.jei:jei-${minecraft_version}-neoforge:${jei_version}"
-    // Citadel dependency - local jar from sibling project
-    implementation files('../Citadel/build/libs/citadel-1.21.1-2.7.0.jar')
+    implementation "curse.maven:citadel-331936:8458935"
 }
 
 var generateModMetadata = tasks.register("generateModMetadata", ProcessResources) {
